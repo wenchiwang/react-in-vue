@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <search-component />
+    <search-component :fruits="fruits" />
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
     <ul>
@@ -94,6 +94,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
+      fruits: ['apple', 'fig', 'orange', 'plum', 'mango', 'cherry', 'banana', 'grape'],
       msg: 'Welcome to Your Vue.js App'
     }
   }

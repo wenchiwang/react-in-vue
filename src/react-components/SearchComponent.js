@@ -1,9 +1,15 @@
 
+/* eslint-disable */
+
 import React from 'react'
 
 class SearchComponent extends React.Component {
   render () {
-    return <p>hello world</p>
+    return (
+        <ul>
+          {this.props.fruits.map(fruit => <li key={fruit}>{fruit}</li>)}
+        </ul>
+    );
   }
 }
 
