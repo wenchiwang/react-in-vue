@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+    <search-component />
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
     <ul>
@@ -84,7 +85,12 @@
 </template>
 
 <script>
+import SearchComponent from '../react-components/SearchComponent'
+
 export default {
+  components: {
+    'search-component': SearchComponent
+  },
   name: 'HelloWorld',
   data () {
     return {
