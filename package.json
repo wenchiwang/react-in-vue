@@ -11,8 +11,11 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vuera": "^0.2.2"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
