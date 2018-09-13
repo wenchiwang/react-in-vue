@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <search-component :fruits="fruits" />
+    <search-component :fruits="fruits" @alertSelectedItem="alertSelectedItem"/>
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
     <ul>
@@ -96,6 +96,11 @@ export default {
     return {
       fruits: ['apple', 'fig', 'orange', 'plum', 'mango', 'cherry', 'banana', 'grape'],
       msg: 'Welcome to Your Vue.js App'
+    }
+  },
+  methods: {
+    alertSelectedItem (a) {
+      alert(`you select: ${a.target.innerHTML}`)
     }
   }
 }
