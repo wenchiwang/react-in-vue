@@ -99,8 +99,8 @@ export default {
     }
   },
   methods: {
-    alertSelectedItem (a) {
-      alert(`you select: ${a.target.innerHTML}`)
+    alertSelectedItem (e) {
+      alert(`you select: ${e.target.innerHTML}`)
     }
   }
 }
